@@ -35,4 +35,33 @@ The portfolio built with the following technologies:
 
   Clone the repository:
     
-    git clone https://github.com/your-username/portfolio.git
+    git clone https://github.com/Murugavl/Portfolio1.git
+
+  Navigate into the project folder:
+
+    cd Portfolio
+  
+  Install dependencies:
+
+    npm install
+
+  Run the development server:
+
+    npm run dev
+
+
+This will start the app in development mode at http://localhost:3000, where you can see your changes in real-time.
+
+## Usage Instructions
+
+   - Navigate to /src/components/ to find the React components used in this project.
+   - You can edit or update your personal information, project details, or styles here.
+   - For styling, open /src/styles/index.css for global styles, or use Tailwind CSS classes directly within your components.
+
+## Deployment
+
+Once you're satisfied with your portfolio, deploy it easily on services like Vercel, Netlify, or any platform that supports static websites.
+
+  - Create an account on Vercel or Netlify.
+  - Link your GitHub repository and follow the prompts to deploy the app.
+
