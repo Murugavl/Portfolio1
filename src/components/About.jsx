@@ -1,8 +1,38 @@
 import { ABOUT_TEXT } from "../constants";
 import aboutImg from "../assets/about.png";
 import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
 
 const About = () => {
+
+  const [line1, setLine1] = useState("")
+  const [line2, setLine2] = useState("")
+
+  const kuralapi = import.meta.env.VITE_KURAL_API
+
+  const fetchKural = async () => {
+    let value = Math.floor(Math.random()*1330)
+
+    try {
+      
+      let response = await fetch(`https://getthirukkural.appspot.com/api/3.0/kural/${value}?appid=${kuralapi}`)
+      let data = response.json()
+      data.then((data)=>{
+        setLine1(data.line1) 
+        setLine2(data.line2)
+        return 0;
+      })
+      .catch((error)=>console.log(error))
+
+    } catch (error) {
+      console.log(error.message)
+    }
+  }
+
+  useEffect(()=>{
+    fetchKural();
+  },[])
+
   return (
     <div className="border-b border-neutral-900 pb-4">
       <h2 className="my-20 text-center text-4xl">
@@ -44,10 +74,11 @@ const About = () => {
               ))}
             </ul>
             <blockquote className="text-xl font-semibold text-teal-600 italic text-center mt-6">
-              "{ABOUT_TEXT.qoutes.qoute}"
+              <p className="text-left ml-5 ">{line1}</p>
+              <p className="text-left ml-5 ">{line2}</p>
               <br />
               <span className="block text-gray-500" style={{textIndent: "35%"}}>
-                {ABOUT_TEXT.qoutes.author}
+                {`- திருவள்ளுவர்`}
               </span>
             </blockquote>
           </div>
