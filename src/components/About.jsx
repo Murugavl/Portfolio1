@@ -3,12 +3,10 @@ import aboutImg from "../assets/about.png";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
-const About = () => {
+const About = ({kuralapi}) => {
 
   const [line1, setLine1] = useState("")
   const [line2, setLine2] = useState("")
-
-  const kuralapi = import.meta.env.VITE_KURAL_API
 
   const fetchKural = async () => {
     let value = Math.floor(Math.random()*1330)
