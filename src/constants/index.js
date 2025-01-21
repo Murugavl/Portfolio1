@@ -4,6 +4,11 @@ import project3 from "../assets/projects/project-3.png";
 import project4 from "../assets/projects/project-4.png";
 import project5 from "../assets/projects/project-5.png";
 import project6  from "../assets/projects/project-6.png";
+import hospital_management_system from "../assets/projects/hospital_management_system.png";
+import ro_customer_management_system from "../assets/projects/ro_customer_management_system.png";
+import crop_prediction from "../assets/projects/crop-prediction.png"
+import flower_prediction from "../assets/projects/flower-prediction.png"
+import smartkart from "../assets/projects/smartkart.png"
 
 export const HERO_CONTENT = `I fell in love with programming and I have at least learnt something, I think… 🤷‍♂️
 
@@ -59,10 +64,45 @@ export const PROJECTS = [
     technologies: ["Python", "Streamlit"],
   },
   {
+    title: "Hospital Management System",
+    image: hospital_management_system,
+    description:
+      "This is a Hospital Management System (HMS) developed using Tkinter, the standard GUI toolkit for Python. The system is designed to help hospital staff manage various administrative tasks such as patient records.",
+    technologies: ["Python", "Tkinter","MongoDB"],
+  },
+  {
+    title: "RO Customer Management System",
+    image: ro_customer_management_system,
+    description:
+      "This is a Customer Management System (CMS) developed using Tkinter, designed to help businesses manage customer information, interactions, and transactions. The system allows easy tracking of customer details.",
+    technologies: ["Python", "Tkinter","MongoDB"],
+  },
+  {
+    title: "Crop Prediction",
+    image: crop_prediction,
+    description:
+      "This Crop Prediction System utilizes machine learning to recommend suitable crops based on environmental data. It helps farmers make informed decisions by analyzing factors like soil type and climate. The system aims to enhance agricultural efficiency and productivity.",
+    technologies: ["Python", "Flask","Machine Learning","Scikit-learn","numpy","pandas"],
+  },
+  {
+    title: "Flower Prediction",
+    image: flower_prediction,
+    description:
+      "Flower Prediction is a machine learning project that uses the Iris dataset to classify iris flowers into three species: Setosa, Versicolor, and Virginica. The project includes data analysis, model training with various algorithms, and deployment via a Flask web application for user-friendly predictions.",
+    technologies: ["Python", "Flask","Machine Learning","Scikit-learn","numpy","pandas"],
+  },
+  {
+    title: "SmartKart",
+    image: smartkart,
+    description:
+      "I have developed a Django-based e-commerce website that features a wide range of items for sale. It provides users with a seamless shopping experience, including product browsing, cart management, and secure checkout. The platform is designed to cater to diverse customer needs with a user-friendly interface and efficient backend management.",
+    technologies: ["Python", "Flask","Machine Learning","Scikit-learn","numpy","pandas"],
+  },
+  {
     title: "Scientific Calculator",
     image: project3,
     description:
-      "The ScientificCalculator app is a powerful tool designed for Android devices that allows users to perform a wide range of mathematical calculations, including basic arithmetic, trigonometric functions, logarithms, and more. Built using Java in Android Studio, this app provides an intuitive user interface and efficient performance.",
+      "The Scientific Calculator app is a powerful tool designed for Android devices that allows users to perform a wide range of mathematical calculations, including basic arithmetic, trigonometric functions, logarithms, and more. Built using Java in Android Studio, this app provides an intuitive user interface and efficient performance.",
     technologies: ["Java", "Android Studio"],
   },
   {
