@@ -1,8 +1,10 @@
 import logo from "../assets/logo.png";
-import { FaGit, FaLinkedin } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
-import { FaSquareXTwitter } from "react-icons/fa6";
-import { FaInstagram } from "react-icons/fa";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
+
+// Replace with your custom image paths or URL for each icon
+import leetcodeIcon from "../assets/leetcode.png";
+import geeksforgeeksIcon from "../assets/gfg.png";
+import codechefIcon from "../assets/codechef.png";
 
 const Navbar = () => {
   return (
@@ -25,20 +27,27 @@ const Navbar = () => {
         >
           <FaGithub />
         </a>
-        {/* <a
-          href="https://www.instagram.com/hhayykkall/"
+        <a
+          href="https://leetcode.com/u/U9RL6UoFrD/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaInstagram />
+          <img src={leetcodeIcon} alt="Leetcode" className="w-8 h-8" />
         </a>
         <a
-          href="https://x.com/HaykalIslam_"
+          href="https://www.geeksforgeeks.org/user/mrvmvho0/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaSquareXTwitter />
-        </a> */}
+          <img src={geeksforgeeksIcon} alt="GeeksForGeeks" className="w-8 h-8" />
+        </a>
+        <a
+          href="https://www.codechef.com/users/murugavelv"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src={codechefIcon} alt="CodeChef" className="w-8 h-8" />
+        </a>
       </div>
     </nav>
   );
