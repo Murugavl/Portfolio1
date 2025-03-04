@@ -1,11 +1,12 @@
-import project1 from "../assets/projects/project-1.jpg";
-import project2 from "../assets/projects/project-2.png";
-import project3 from "../assets/projects/project-3.png";
-import project4 from "../assets/projects/project-4.png";
-import project5 from "../assets/projects/project-5.png";
-import project6  from "../assets/projects/project-6.png";
+import liver_image from "../assets/projects/liver_image.jpg";
+import code_converter from "../assets/projects/code_converter.png";
+import calculator from "../assets/projects/calculator.png";
+import login from "../assets/projects/login-page.png";
+import landing from "../assets/projects/landing-page.png";
+import news  from "../assets/projects/news-app.png";
 import hospital_management_system from "../assets/projects/hospital_management_system.png";
-import ro_customer_management_system from "../assets/projects/ro_customer_management_system.png";
+import churn from "../assets/projects/Customer_Churn_Prediction.png"
+import loan from "../assets/projects/Loan_Approval_Prediction.png"
 import crop_prediction from "../assets/projects/crop-prediction.png"
 import flower_prediction from "../assets/projects/flower-prediction.png"
 import smartkart from "../assets/projects/smartkart.png"
@@ -51,31 +52,24 @@ export const EXPERIENCES = [
 export const PROJECTS = [
   {
     title: "Liver Cancer Detection",
-    image: project1,
+    image: liver_image,
     description:
       "This project focuses on detecting liver cancer using various machine learning algorithms. The dataset contains features relevant to liver health, and the goal is to predict whether a patient has liver cancer or not based on these features.",
-    technologies: ["Python", "Jupyter Notebook"],
+    technologies: ["Python", "Jupyter Notebook","Machine Learning",'scikit-learn'],
   },
   {
-    title: "Code Converter",
-    image: project2,
+    title: "Loan Approval Prediction",
+    image: loan,
     description:
-      "Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage.",
-    technologies: ["Python", "Streamlit"],
+      "This project is a Loan Approval Prediction System that uses Machine Learning to determine whether a loan application should be approved or rejected based on various factors. It is deployed using Streamlit for an interactive user experience.",
+    technologies: ["Python", "Jupyter Notebook","Machine Learning","Streamlit",'scikit-learn'],
   },
   {
-    title: "Hospital Management System",
-    image: hospital_management_system,
+    title: "Customer Churn Prediction",
+    image: churn,
     description:
-      "This is a Hospital Management System (HMS) developed using Tkinter, the standard GUI toolkit for Python. The system is designed to help hospital staff manage various administrative tasks such as patient records.",
-    technologies: ["Python", "Tkinter","MongoDB"],
-  },
-  {
-    title: "RO Customer Management System",
-    image: ro_customer_management_system,
-    description:
-      "This is a Customer Management System (CMS) developed using Tkinter, designed to help businesses manage customer information, interactions, and transactions. The system allows easy tracking of customer details.",
-    technologies: ["Python", "Tkinter","MongoDB"],
+      "Customer churn prediction is a crucial task in business analytics, helping companies identify customers who are likely to leave and take preventive actions. This project utilizes Machine Learning (ML) techniques to analyze customer behavior and predict churn.",
+    technologies: ["Python", "Jupyter Notebook","Machine Learning","Streamlit",'scikit-learn'],
   },
   {
     title: "Crop Prediction",
@@ -99,29 +93,43 @@ export const PROJECTS = [
     technologies: ["Python", "Flask","Machine Learning","Scikit-learn","numpy","pandas"],
   },
   {
+    title: "Code Converter",
+    image: code_converter,
+    description:
+      "Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage.",
+    technologies: ["Python", "Streamlit"],
+  },
+  {
+    title: "Hospital Management System",
+    image: hospital_management_system,
+    description:
+      "This is a Hospital Management System (HMS) developed using Tkinter, the standard GUI toolkit for Python. The system is designed to help hospital staff manage various administrative tasks such as patient records.",
+    technologies: ["Python", "Tkinter","MongoDB"],
+  },
+  {
     title: "Scientific Calculator",
-    image: project3,
+    image: calculator,
     description:
       "The Scientific Calculator app is a powerful tool designed for Android devices that allows users to perform a wide range of mathematical calculations, including basic arithmetic, trigonometric functions, logarithms, and more. Built using Java in Android Studio, this app provides an intuitive user interface and efficient performance.",
     technologies: ["Java", "Android Studio"],
   },
   {
     title: "Login Form",
-    image: project4,
+    image: login,
     description:
       "Designed and created a user-friendly login form in Figma, focusing on clean UI/UX with attention to accessibility and responsiveness. The form includes input fields for username and password, along with a 'Submit' button, and a 'Forgot Password' link for added functionality.",
     technologies: ["Figma"],
   },
   {
     title: "Landing Page",
-    image: project5,
+    image: landing,
     description:
       "Designed and created a visually appealing landing page in Figma, focusing on clean UI/UX with emphasis on accessibility and responsiveness. The page includes sections like a hero image, a clear call-to-action button, and product details, ensuring a smooth user experience across devices.  The design also incorporates strategic use of typography, color schemes, and visual hierarchy to engage visitors and drive conversions.",
     technologies: ["Figma"],
   },
   {
     title: "News App",
-    image: project6,
+    image: news,
     description:
       "Designed and created an engaging news app in Figma, focusing on intuitive UI/UX with emphasis on microinteractions for a dynamic user experience.  The app includes features like smooth transitions between articles, interactive buttons.",
     technologies: ["Figma"],
