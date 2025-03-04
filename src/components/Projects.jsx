@@ -45,6 +45,19 @@ const Projects = () => {
                   {tech}
                 </span>
               ))}
+              {/* Demo Link Button */}
+              {project.demoLink && (
+                <div className="mt-4">
+                  <a
+                    href={project.demoLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block rounded bg-purple-900 px-4 py-2 text-white text-sm font-medium hover:bg-purple-700 transition"
+                  >
+                    View Demo
+                  </a>
+                </div>
+              )}
             </motion.div>
           </div>
         ))}

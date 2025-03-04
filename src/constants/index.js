@@ -24,10 +24,6 @@ export const ABOUT_TEXT = {
   para : " I am currently pursuing my B.Tech degree in Hindusthan Institute of Technology in the field of Artificial Intelligence and Data Science.",
   line : "Apart from coding, some other activities that I love to do!",
   list : ["Playing Games","Listening Music","Travelling"],
-  qoutes : {
-    qoute : "Be the light in the world of Darkness!",
-    author : "-MURUGAVEL V"
-  }
 }
 
 export const EXPERIENCES = [
@@ -63,6 +59,7 @@ export const PROJECTS = [
     description:
       "This project is a Loan Approval Prediction System that uses Machine Learning to determine whether a loan application should be approved or rejected based on various factors. It is deployed using Streamlit for an interactive user experience.",
     technologies: ["Python", "Jupyter Notebook","Machine Learning","Streamlit",'scikit-learn'],
+    demoLink: "https://loan--approval--prediction.streamlit.app",
   },
   {
     title: "Customer Churn Prediction",
@@ -70,6 +67,7 @@ export const PROJECTS = [
     description:
       "Customer churn prediction is a crucial task in business analytics, helping companies identify customers who are likely to leave and take preventive actions. This project utilizes Machine Learning (ML) techniques to analyze customer behavior and predict churn.",
     technologies: ["Python", "Jupyter Notebook","Machine Learning","Streamlit",'scikit-learn'],
+    demoLink: "https://customer-churnprediction.streamlit.app",
   },
   {
     title: "Crop Prediction",
@@ -98,6 +96,7 @@ export const PROJECTS = [
     description:
       "Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage.",
     technologies: ["Python", "Streamlit"],
+    demoLink: "https://code-converter.streamlit.app/",
   },
   {
     title: "Hospital Management System",
@@ -119,6 +118,7 @@ export const PROJECTS = [
     description:
       "Designed and created a user-friendly login form in Figma, focusing on clean UI/UX with attention to accessibility and responsiveness. The form includes input fields for username and password, along with a 'Submit' button, and a 'Forgot Password' link for added functionality.",
     technologies: ["Figma"],
+    demoLink: "https://www.figma.com/proto/RnSLA1hVHzTmRmEbjyMl6V/Login-Form?node-id=0-3&scaling=scale-down&content-scaling=fixed&t=r3Ksw6Vrcx7rjk4H-1",
   },
   {
     title: "Landing Page",
@@ -126,6 +126,7 @@ export const PROJECTS = [
     description:
       "Designed and created a visually appealing landing page in Figma, focusing on clean UI/UX with emphasis on accessibility and responsiveness. The page includes sections like a hero image, a clear call-to-action button, and product details, ensuring a smooth user experience across devices.  The design also incorporates strategic use of typography, color schemes, and visual hierarchy to engage visitors and drive conversions.",
     technologies: ["Figma"],
+    demoLink: "https://www.figma.com/proto/RnSLA1hVHzTmRmEbjyMl6V/Login-Form?node-id=0-3&scaling=scale-down&content-scaling=fixed&t=r3Ksw6Vrcx7rjk4H-1",
   },
   {
     title: "News App",
@@ -133,6 +134,7 @@ export const PROJECTS = [
     description:
       "Designed and created an engaging news app in Figma, focusing on intuitive UI/UX with emphasis on microinteractions for a dynamic user experience.  The app includes features like smooth transitions between articles, interactive buttons.",
     technologies: ["Figma"],
+    demoLink: "https://www.figma.com/proto/RnSLA1hVHzTmRmEbjyMl6V/Login-Form?node-id=0-3&scaling=scale-down&content-scaling=fixed&t=r3Ksw6Vrcx7rjk4H-1",
   },
 ];
 
