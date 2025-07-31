@@ -28,7 +28,7 @@ const Navbar = () => {
           <FaGithub />
         </a>
         <a
-          href="https://leetcode.com/u/U9RL6UoFrD/"
+          href="https://leetcode.com/u/murugavl/"
           target="_blank"
           rel="noopener noreferrer"
         >
