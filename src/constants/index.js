@@ -36,13 +36,6 @@ export const EXPERIENCES = [
       "Python",
     ],
   },
-  {
-    year: "Jul 2024",
-    role: "UI/UX Intern",
-    company: "Cognigyz Technologies",
-    description: `Designed intuitive user interfaces adn interactive prototypes to enhance user experience. Conducted user research adn usability testing to gather feedback adn refine design solutions. Collaborated with developers and stakeholders to ensure seamless implementation of design concepts.`,
-    technologies: ["Figma","UI/UX,"],
-  },
 ];
 
 export const PROJECTS = [
@@ -111,30 +104,6 @@ export const PROJECTS = [
     description:
       "The Scientific Calculator app is a powerful tool designed for Android devices that allows users to perform a wide range of mathematical calculations, including basic arithmetic, trigonometric functions, logarithms, and more. Built using Java in Android Studio, this app provides an intuitive user interface and efficient performance.",
     technologies: ["Java", "Android Studio"],
-  },
-  {
-    title: "Login Form",
-    image: login,
-    description:
-      "Designed and created a user-friendly login form in Figma, focusing on clean UI/UX with attention to accessibility and responsiveness. The form includes input fields for username and password, along with a 'Submit' button, and a 'Forgot Password' link for added functionality.",
-    technologies: ["Figma"],
-    demoLink: "https://www.figma.com/proto/RnSLA1hVHzTmRmEbjyMl6V/Login-Form?node-id=0-3&scaling=scale-down&content-scaling=fixed&t=r3Ksw6Vrcx7rjk4H-1",
-  },
-  {
-    title: "Landing Page",
-    image: landing,
-    description:
-      "Designed and created a visually appealing landing page in Figma, focusing on clean UI/UX with emphasis on accessibility and responsiveness. The page includes sections like a hero image, a clear call-to-action button, and product details, ensuring a smooth user experience across devices.  The design also incorporates strategic use of typography, color schemes, and visual hierarchy to engage visitors and drive conversions.",
-    technologies: ["Figma"],
-    demoLink: "https://www.figma.com/proto/RnSLA1hVHzTmRmEbjyMl6V/Login-Form?node-id=0-3&scaling=scale-down&content-scaling=fixed&t=r3Ksw6Vrcx7rjk4H-1",
-  },
-  {
-    title: "News App",
-    image: news,
-    description:
-      "Designed and created an engaging news app in Figma, focusing on intuitive UI/UX with emphasis on microinteractions for a dynamic user experience.  The app includes features like smooth transitions between articles, interactive buttons.",
-    technologies: ["Figma"],
-    demoLink: "https://www.figma.com/proto/RnSLA1hVHzTmRmEbjyMl6V/Login-Form?node-id=0-3&scaling=scale-down&content-scaling=fixed&t=r3Ksw6Vrcx7rjk4H-1",
   },
 ];
 
