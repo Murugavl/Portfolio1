@@ -1,13 +1,11 @@
 import {
     SiVisualstudiocode,
-    SiVercel,
     SiAndroidstudio,
     SiPycharm,
     SiJupyter,
     SiAnaconda,
     SiEclipseide,
     SiGithub,
-    SiFigma,
   } from "react-icons/si";
 import { motion } from "framer-motion";
 
