@@ -74,17 +74,6 @@ const TechStack = () => {
           <FaJava className="text-7xl text-cyan-400" />
         </motion.div>
 
-         {/* R */}
-         <motion.div
-          variants={iconVariants(2)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
-        >
-          <SiR className="text-7xl text-cyan-400" />
-        </motion.div>
-
-
         {/* MySql */}
         <motion.div
           variants={iconVariants(3)}
