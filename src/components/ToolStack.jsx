@@ -111,15 +111,6 @@ const ToolStack = () => {
             <SiGithub className="text-7xl text-cyan-400" />
           </motion.div>
          
-         {/* Figma */}
-         <motion.div
-            variants={iconVariants(3)}
-            initial="initial"
-            animate="animate"
-            className="rounded-2xl border-4 border-neutral-800 p-4"
-          >
-            <SiFigma className="text-7xl text-cyan-400" />
-          </motion.div>
   
         </motion.div>
       </div>
