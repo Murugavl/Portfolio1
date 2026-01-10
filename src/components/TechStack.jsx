@@ -33,26 +33,6 @@ const TechStack = () => {
         className="flex flex-wrap items-center justify-center gap-4"
       >
 
-        {/* C */}
-        <motion.div
-          variants={iconVariants(5)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
-        >
-          <TbLetterC className="text-7xl text-cyan-400" />
-        </motion.div>
-
-        {/* C++ */}
-        <motion.div
-          variants={iconVariants(5.5)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
-        >
-          <PiFileCppDuotone className="text-7xl text-cyan-400" />
-        </motion.div>
-
 
         {/* PYTHON */}
         <motion.div
