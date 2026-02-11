@@ -3,33 +3,33 @@ import aboutImg from "../assets/about.png";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
-const About = ({kuralapi}) => {
+const About = ({ kuralapi }) => {
 
   const [line1, setLine1] = useState("")
   const [line2, setLine2] = useState("")
 
   const fetchKural = async () => {
-    let value = Math.floor(Math.random()*1330)
+    let value = Math.floor(Math.random() * 1330)
 
     try {
-      
+
       let response = await fetch(`https://getthirukkural.appspot.com/api/3.0/kural/${value}?appid=${kuralapi}`)
       let data = response.json()
-      data.then((data)=>{
-        setLine1(data.line1) 
+      data.then((data) => {
+        setLine1(data.line1)
         setLine2(data.line2)
         return 0;
       })
-      .catch((error)=>console.log(error))
+        .catch((error) => console.log(error))
 
     } catch (error) {
       console.log(error.message)
     }
   }
 
-  useEffect(()=>{
+  useEffect(() => {
     fetchKural();
-  },[])
+  }, [])
 
   return (
     <div className="border-b border-neutral-900 pb-4">
@@ -75,7 +75,7 @@ const About = ({kuralapi}) => {
               <p className="text-left ml-5 ">{line1}</p>
               <p className="text-left ml-5 ">{line2}</p>
               <br />
-              <span className="block text-gray-500" style={{textIndent: "35%"}}>
+              <span className="block text-gray-500" style={{ textIndent: "35%" }}>
                 {`- திருவள்ளுவர்`}
               </span>
             </blockquote>
