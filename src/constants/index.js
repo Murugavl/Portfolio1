@@ -1,4 +1,5 @@
 // ─── Project Images ────────────────────────────────────────────────
+import resumePdf from "../assets/MURUGAVEL V.pdf";
 import liver_image from "../assets/projects/liver_image.jpg";
 import code_converter from "../assets/projects/code_converter.png";
 import calculator from "../assets/projects/calculator.png";
@@ -48,9 +49,11 @@ export const HERO = {
   ctaPrimary: { label: "View Projects", href: "#projects" },
   ctaSecondary: {
     label: "Download Résumé",
-    href: "/resume.pdf",
+    href: resumePdf,
   },
 };
+
+export const RESUME_LINK = resumePdf;
 
 // ─── About ─────────────────────────────────────────────────────────
 export const ABOUT = {

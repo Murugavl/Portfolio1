@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { SiLeetcode, SiGeeksforgeeks, SiCodechef } from "react-icons/si";
-import { SOCIAL_LINKS } from "../constants";
+import { SOCIAL_LINKS, RESUME_LINK } from "../constants";
 
 const NAV_LINKS = [
   { label: "About", href: "#about" },
@@ -66,7 +66,7 @@ const Navbar = () => {
           {/* Résumé + mobile toggle */}
           <div className="flex items-center gap-4">
             <a
-              href="/resume.pdf"
+              href={RESUME_LINK}
               download
               className="nav-resume hidden sm:inline-flex"
               aria-label="Download Résumé"
@@ -126,7 +126,7 @@ const Navbar = () => {
                 {label}
               </a>
             ))}
-            <a href="/resume.pdf" download className="nav-resume self-start mt-2">
+            <a href={RESUME_LINK} download className="nav-resume self-start mt-2">
               Résumé ↓
             </a>
             {/* Social icons in mobile menu */}
