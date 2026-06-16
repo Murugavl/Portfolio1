@@ -9,6 +9,13 @@ import crop_prediction from "../assets/projects/crop-prediction.png";
 import flower_prediction from "../assets/projects/flower-prediction.png";
 import smartkart from "../assets/projects/smartkart.png";
 
+// ─── Certification Images ──────────────────────────────────────────
+import uipath_cert from "../assets/certs/UI-Path.png";
+import amazon_cert from "../assets/certs/Amazon.png";
+import software_dev_cert from "../assets/certs/Software_Development.png";
+import data_analytics_cert from "../assets/certs/Data_Analytics.png";
+import nptel_cert from "../assets/certs/NPTEL.png";
+
 // ─── Social Links ──────────────────────────────────────────────────
 export const SOCIAL_LINKS = {
   github: "https://github.com/Murugavl",
@@ -190,31 +197,31 @@ export const CERTIFICATIONS = [
   {
     provider: "UiPath Certified Professional",
     name: "Automation Developer Associate certification",
-    image: '../assets/certs/UI-Path.png',
+    image: uipath_cert,
     link: "https://credentials.uipath.com/41b2ea5c-3cdc-446b-8d22-aa1a9e6b6ffa#acc.wHvZMP03",
   },
   {
     provider: "AWS Training and Certification",
     name: "Public Sector AI & ML",
-    image: '../assets/certs/Amazon.png',
+    image: amazon_cert,
     link: "https://drive.google.com/file/d/1OzE905XSv8Ajok1wn3eGpjLtQH9V6CMY/view",
   },
   {
     provider: "Microsoft and Linkedln",
     name: "Career Essentials in Software Development.",
-    image: '../assets/certs/Software_Development.png',
+    image: software_dev_cert,
     link: "https://www.linkedin.com/learning/certificates/f86e7d4d0ad97120dd30291c4251abccc87d310ab5e685f87664d884fafad910",
   },
   {
     provider: "Microsoft and Linkedln",
     name: "Career Essentials in Data Analysis",
-    image: '../assets/certs/Data_Analytics.png',
+    image: data_analytics_cert,
     link: "https://www.linkedin.com/learning/certificates/c34a20d0c1e57ebbe6f2db76f0ec695c341aea9f6099e1b772382bfa9235899b?trk=share_certificate",
   },
   {
     provider: "NPTEL",
     name: "The Joy of Computing Using Python",
-    image: '../assets/certs/NPTEL.png',
+    image: nptel_cert,
     link: "https://drive.google.com/file/d/1_h3BLtXNw1LNaEtwsG9yaF60ECmypsP4/view",
   },
 ];
