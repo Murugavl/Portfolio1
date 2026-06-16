@@ -1,112 +1,208 @@
+// ─── Project Images ────────────────────────────────────────────────
 import liver_image from "../assets/projects/liver_image.jpg";
 import code_converter from "../assets/projects/code_converter.png";
 import calculator from "../assets/projects/calculator.png";
 import hospital_management_system from "../assets/projects/hospital_management_system.png";
-import churn from "../assets/projects/Customer_Churn_Prediction.png"
-import loan from "../assets/projects/Loan_Approval_Prediction.png"
-import crop_prediction from "../assets/projects/crop-prediction.png"
-import flower_prediction from "../assets/projects/flower-prediction.png"
-import smartkart from "../assets/projects/smartkart.png"
+import churn from "../assets/projects/Customer_Churn_Prediction.png";
+import loan from "../assets/projects/Loan_Approval_Prediction.png";
+import crop_prediction from "../assets/projects/crop-prediction.png";
+import flower_prediction from "../assets/projects/flower-prediction.png";
+import smartkart from "../assets/projects/smartkart.png";
 
-export const HERO_CONTENT = `I fell in love with programming and I have at least learnt something, I think… 🤷‍♂️
+// ─── Social Links ──────────────────────────────────────────────────
+export const SOCIAL_LINKS = {
+  github: "https://github.com/Murugavl",
+  linkedin: "https://www.linkedin.com/in/murugavelv",
+  leetcode: "https://leetcode.com/u/murugavl/",
+  geeksforgeeks: "https://www.geeksforgeeks.org/user/mrvmvho0/",
+  codechef: "https://www.codechef.com/users/murugavelv",
+};
 
-I am fluent in classics like C, Python and Java.
+// ─── Terminal Script ───────────────────────────────────────────────
+export const TERMINAL_LINES = [
+  { prompt: ">>> ", text: "import murugavel as dev" },
+  { prompt: ">>> ", text: "dev.role" },
+  { output: "'Python Developer & ML Engineer'" },
+  { prompt: ">>> ", text: "dev.builds()" },
+  { output: "'Models that turn data into decisions'" },
+  { prompt: ">>> ", text: "dev.stack" },
+  { output: "['Python', 'Django', 'Flask', 'scikit-learn', 'Streamlit']" },
+  { prompt: ">>> ", text: "dev.status" },
+  { output: "'Open to internships & entry-level roles ✓'" },
+];
 
-My field of Interest's are building new  Machine Learning Projects and also in areas related to Deep Learning.
+// ─── Hero ──────────────────────────────────────────────────────────
+export const HERO = {
+  eyebrow: "# whoami",
+  name: "MURUGAVEL V",
+  role: "Python Developer & ML Engineer",
+  tagline:
+    "I build machine learning systems and Python applications that turn raw data into real decisions.",
+  ctaPrimary: { label: "View Projects", href: "#projects" },
+  ctaSecondary: {
+    label: "Download Résumé",
+    href: "/resume.pdf",
+  },
+};
 
-Whenever possible, I also apply my passion for developing products with Python and Modern Python frameworks and libraries,  like Django and Flask.`;
+// ─── About ─────────────────────────────────────────────────────────
+export const ABOUT = {
+  bio: "I'm a B.Tech graduate in Artificial Intelligence & Data Science from Hindusthan Institute of Technology. I build machine learning models and Python applications — from predictive systems to deployable web apps — and I'm constantly exploring how deep learning can solve real-world problems.",
+  hobbies: ["Watching series / movies", "Reading books"],
+  kural: {
+    tamil:
+      "முறைகோடி மன்னவன் செய்யின் உறைகோடி ஒல்லாது வானம் பெயல்.",
+    attribution: "Thiruvalluvar · Thirukkural · Kural 559 (Tyranny)",
+    gloss:
+      "This verse warns that when a ruler abandons justice, the rains themselves fail to fall in season — used here as a personal reminder that integrity in small things shows up in the big ones.",
+  },
+};
 
-export const ABOUT_TEXT = {
-  name : "Hi Everyone, I am MURUGAVEL V.",
-  para : " I am currently pursuing my B.Tech degree in Hindusthan Institute of Technology in the field of Artificial Intelligence and Data Science.",
-  line : "Apart from coding, some other activities that I love to do!",
-  list : ["Playing Games","Listening Music","Travelling"],
-}
+// ─── Skills ────────────────────────────────────────────────────────
+export const SKILLS = {
+  languages: ["Python", "Java"],
+  frameworks: [
+    "Django",
+    "Flask",
+    "Streamlit",
+    "scikit-learn",
+    "NumPy",
+    "Pandas",
+  ],
+  tools: [
+    "Jupyter Notebook",
+    "Tkinter",
+    "MongoDB",
+    "Git",
+    "GitHub",
+    "Docker",
+    "Android Studio",
+  ],
+};
 
+// ─── Experience ────────────────────────────────────────────────────
 export const EXPERIENCES = [
   {
-    year: "Jun 2024",
+    period: "June 2024",
     role: "Data Science Intern",
     company: "Technohacks Edutech",
-    description: `Developed and implemented data analysis models to extract actionable insights. Utilized machine learning techniques to enhance predictive accuracy. Collaborated with cross-functional teams to support data driven decision-making.`,
-    technologies: [
-      "Python",
+    bullets: [
+      "Developed data analysis and machine learning models to extract actionable insights from raw datasets.",
+      "Applied ML techniques to improve predictive accuracy on classification tasks — add specific dataset/metric here.",
+      "Collaborated with cross-functional teams to translate data analysis into data-driven decisions.",
     ],
+    technologies: ["Python"],
   },
 ];
 
+// ─── Projects ──────────────────────────────────────────────────────
 export const PROJECTS = [
   {
     title: "Liver Cancer Detection",
     image: liver_image,
     description:
-      "This project focuses on detecting liver cancer using various machine learning algorithms. The dataset contains features relevant to liver health, and the goal is to predict whether a patient has liver cancer or not based on these features.",
-    technologies: ["Python", "Jupyter Notebook","Machine Learning",'scikit-learn'],
+      "Built and evaluated multiple machine learning classifiers to detect liver cancer from patient health records, comparing model performance to identify the most reliable predictors for early diagnosis support.",
+    technologies: ["Python", "scikit-learn", "Pandas", "Jupyter Notebook"],
+    githubLink: "https://github.com/Murugavl",
   },
   {
     title: "Loan Approval Prediction",
     image: loan,
     description:
-      "This project is a Loan Approval Prediction System that uses Machine Learning to determine whether a loan application should be approved or rejected based on various factors. It is deployed using Streamlit for an interactive user experience.",
-    technologies: ["Python", "Jupyter Notebook","Machine Learning","Streamlit",'scikit-learn'],
+      "Designed an end-to-end loan approval system that scores applications against historical data using scikit-learn, deployed as an interactive Streamlit app for real-time decisioning.",
+    technologies: ["Python", "scikit-learn", "Streamlit", "Pandas"],
+    githubLink: "https://github.com/Murugavl",
     demoLink: "https://loan--approval--prediction.streamlit.app",
   },
   {
     title: "Customer Churn Prediction",
     image: churn,
     description:
-      "Customer churn prediction is a crucial task in business analytics, helping companies identify customers who are likely to leave and take preventive actions. This project utilizes Machine Learning (ML) techniques to analyze customer behavior and predict churn.",
-    technologies: ["Python", "Jupyter Notebook","Machine Learning","Streamlit",'scikit-learn'],
+      "Built a churn-prediction pipeline that analyzes customer behavior patterns to flag at-risk customers early, deployed via Streamlit for interactive exploration.",
+    technologies: ["Python", "scikit-learn", "Streamlit", "Pandas"],
+    githubLink: "https://github.com/Murugavl",
     demoLink: "https://customer-churnprediction.streamlit.app",
   },
   {
     title: "Crop Prediction",
     image: crop_prediction,
     description:
-      "This Crop Prediction System utilizes machine learning to recommend suitable crops based on environmental data. It helps farmers make informed decisions by analyzing factors like soil type and climate. The system aims to enhance agricultural efficiency and productivity.",
-    technologies: ["Python", "Flask","Machine Learning","Scikit-learn","numpy","pandas"],
+      "Built a Flask-based recommendation system that suggests optimal crops from soil and climate data, helping farmers make data-driven planting decisions.",
+    technologies: ["Python", "Flask", "scikit-learn", "NumPy", "Pandas"],
+    githubLink: "https://github.com/Murugavl",
   },
   {
     title: "Flower Prediction",
     image: flower_prediction,
     description:
-      "Flower Prediction is a machine learning project that uses the Iris dataset to classify iris flowers into three species: Setosa, Versicolor, and Virginica. The project includes data analysis, model training with various algorithms, and deployment via a Flask web application for user-friendly predictions.",
-    technologies: ["Python", "Flask","Machine Learning","Scikit-learn","numpy","pandas"],
+      "Trained and compared classification models on the Iris dataset, then deployed the best-performing model as a Flask web app for real-time species prediction.",
+    technologies: ["Python", "Flask", "scikit-learn", "NumPy", "Pandas"],
+    githubLink: "https://github.com/Murugavl",
   },
   {
     title: "SmartKart",
     image: smartkart,
     description:
-      "I have developed a Django-based e-commerce website that features a wide range of items for sale. It provides users with a seamless shopping experience, including product browsing, cart management, and secure checkout. The platform is designed to cater to diverse customer needs with a user-friendly interface and efficient backend management.",
-    technologies: ["Python", "Flask","Machine Learning","Scikit-learn","numpy","pandas"],
+      "Developed a full-stack e-commerce platform in Django, with product browsing, cart management, and a secure checkout flow.",
+    technologies: ["Python", "Django", "HTML/CSS"],
+    githubLink: "https://github.com/Murugavl",
   },
   {
     title: "Code Converter",
     image: code_converter,
     description:
-      "Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage.",
-    technologies: ["Python", "Streamlit"],
+      "Built an in-browser code and Markdown editor in React, with live HTML/CSS/JS previews, GitHub-flavored Markdown rendering, and autosave to local storage.",
+    technologies: ["React", "JavaScript", "HTML/CSS"],
+    githubLink: "https://github.com/Murugavl",
     demoLink: "https://code-converter.streamlit.app/",
   },
   {
     title: "Hospital Management System",
     image: hospital_management_system,
     description:
-      "This is a Hospital Management System (HMS) developed using Tkinter, the standard GUI toolkit for Python. The system is designed to help hospital staff manage various administrative tasks such as patient records.",
-    technologies: ["Python", "Tkinter","MongoDB"],
+      "Built a desktop Hospital Management System with Tkinter and MongoDB to help administrative staff manage patient records and operations.",
+    technologies: ["Python", "Tkinter", "MongoDB"],
+    githubLink: "https://github.com/Murugavl",
   },
   {
     title: "Scientific Calculator",
     image: calculator,
     description:
-      "The Scientific Calculator app is a powerful tool designed for Android devices that allows users to perform a wide range of mathematical calculations, including basic arithmetic, trigonometric functions, logarithms, and more. Built using Java in Android Studio, this app provides an intuitive user interface and efficient performance.",
+      "Developed a native Android scientific calculator in Java, supporting arithmetic, trigonometric, and logarithmic functions through an intuitive interface.",
     technologies: ["Java", "Android Studio"],
+    githubLink: "https://github.com/Murugavl",
   },
 ];
 
+// ─── Contact ───────────────────────────────────────────────────────
 export const CONTACT = {
-  address:
-    "Virudhunagar, Tamil Nadu, India",
-  phoneNo: "+91 6379262122",
-  email: "mrvmvel@gmail.com",
+  location: "Rajapalayam, Virudhunagar, Tamil Nadu",
+  email: "vmv2k05@gmail.com",
+  blurb:
+    "Based in Virudhunagar, Tamil Nadu — open to internships and entry-level roles in Python development, machine learning, and data science. Email is the fastest way to reach me.",
+  // ⚠ Phone number intentionally omitted from visible HTML — keep in résumé PDF only
 };
+
+// ─── Certifications ────────────────────────────────────────────────
+// Add your real certificate image imports and links below.
+// image: import each image from ../assets/certs/ or use a URL string.
+export const CERTIFICATIONS = [
+  {
+    provider: "Technohacks Edutech",
+    name: "Data Science Internship Certificate",
+    image: null, // ⚠ Replace with: import certImg from '../assets/certs/technohacks.jpg'
+    link: "#",   // ⚠ Replace with your real certificate URL
+  },
+  {
+    provider: "NPTEL / Coursera",
+    name: "Machine Learning Specialization",
+    image: null, // ⚠ Replace with real image
+    link: "#",   // ⚠ Replace with your real certificate URL
+  },
+  {
+    provider: "Google",
+    name: "Python for Data Science",
+    image: null, // ⚠ Replace with real image
+    link: "#",   // ⚠ Replace with your real certificate URL
+  },
+];
