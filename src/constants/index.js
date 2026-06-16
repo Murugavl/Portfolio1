@@ -188,21 +188,33 @@ export const CONTACT = {
 // image: import each image from ../assets/certs/ or use a URL string.
 export const CERTIFICATIONS = [
   {
-    provider: "Technohacks Edutech",
-    name: "Data Science Internship Certificate",
-    image: null, // ⚠ Replace with: import certImg from '../assets/certs/technohacks.jpg'
-    link: "#",   // ⚠ Replace with your real certificate URL
+    provider: "UiPath Certified Professional",
+    name: "Automation Developer Associate certification",
+    image: '../assets/certs/UI-Path.png',
+    link: "https://credentials.uipath.com/41b2ea5c-3cdc-446b-8d22-aa1a9e6b6ffa#acc.wHvZMP03",
   },
   {
-    provider: "NPTEL / Coursera",
-    name: "Machine Learning Specialization",
-    image: null, // ⚠ Replace with real image
-    link: "#",   // ⚠ Replace with your real certificate URL
+    provider: "AWS Training and Certification",
+    name: "Public Sector AI & ML",
+    image: '../assets/certs/Amazon.png',
+    link: "https://drive.google.com/file/d/1OzE905XSv8Ajok1wn3eGpjLtQH9V6CMY/view",
   },
   {
-    provider: "Google",
-    name: "Python for Data Science",
-    image: null, // ⚠ Replace with real image
-    link: "#",   // ⚠ Replace with your real certificate URL
+    provider: "Microsoft and Linkedln",
+    name: "Career Essentials in Software Development.",
+    image: '../assets/certs/Software_Development.png',
+    link: "https://www.linkedin.com/learning/certificates/f86e7d4d0ad97120dd30291c4251abccc87d310ab5e685f87664d884fafad910",
+  },
+  {
+    provider: "Microsoft and Linkedln",
+    name: "Career Essentials in Data Analysis",
+    image: '../assets/certs/Data_Analytics.png',
+    link: "https://www.linkedin.com/learning/certificates/c34a20d0c1e57ebbe6f2db76f0ec695c341aea9f6099e1b772382bfa9235899b?trk=share_certificate",
+  },
+  {
+    provider: "NPTEL",
+    name: "The Joy of Computing Using Python",
+    image: '../assets/certs/NPTEL.png',
+    link: "https://drive.google.com/file/d/1_h3BLtXNw1LNaEtwsG9yaF60ECmypsP4/view",
   },
 ];
