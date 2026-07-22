@@ -103,6 +103,24 @@ export const EXPERIENCES = [
     ],
     technologies: ["Python"],
   },
+  {
+    period: "Oct 2025 - Dec 2025",
+    role: "AI Research Intern",
+    company: "Infosys Springboard (Virtual Internship)",
+    bullets: [
+      "Built and explored an Open Deep Research framework using Agentic LLMs to automate multi-step research workflows.",
+      "Designed AI agent pipelines for task planning, web research, reasoning, and structured report generation using modern LLM architectures.",
+      "Gained hands-on experience with AI agents, prompt engineering, retrieval workflows, and research automation while applying industry best practices.",
+    ],
+    technologies: [
+      "Python",
+      "Agentic AI",
+      "LLMs",
+      "Prompt Engineering",
+      "AI Agents",
+      "Research Automation"
+    ],
+  },
 ];
 
 // ─── Projects ──────────────────────────────────────────────────────
@@ -112,76 +130,235 @@ export const PROJECTS = [
     image: liver_image,
     description:
       "Built and evaluated multiple machine learning classifiers to detect liver cancer from patient health records, comparing model performance to identify the most reliable predictors for early diagnosis support.",
-    technologies: ["Python", "scikit-learn", "Pandas", "Jupyter Notebook"],
-    githubLink: "https://github.com/Murugavl",
+    overview: "This project aims to support early diagnosis of liver cancer by analyzing patient health records. By comparing different machine learning classifiers, we identify the most accurate model for predicting liver cancer risk, potentially saving lives through early intervention.",
+    problemSolved: "Liver cancer is often detected at late stages when treatment options are limited. This ML system helps clinicians identify high-risk patients earlier based on routine clinical metrics.",
+    features: [
+      "Data preprocessing & normalization",
+      "Exploratory Data Analysis (EDA)",
+      "Evaluation of multiple ML classifiers (Logistic Regression, Random Forest, SVM)",
+      "Performance metrics comparison (Accuracy, Precision, Recall, F1-Score)"
+    ],
+    challenges: "Handling class imbalance in medical records where negative cases outnumber positive cancer diagnoses. Solved using SMOTE (Synthetic Minority Over-sampling Technique) to balance the training dataset.",
+    techStack: ["Python", "scikit-learn", "Pandas", "NumPy", "Jupyter Notebook"],
+    deploymentPlatform: "Jupyter Notebook (Offline Analysis)",
+    // frontend: "None (Jupyter Notebook / CLI)",
+    backend: "Python",
+    // database: "None (CSV data source)",
+    cloudStorage: "None",
+    authentication: "None",
+    api: "None",
+    architecture: "Monolithic Notebook",
+    github: "https://github.com/Murugavl/liver_cancer_detection",
+    // liveDemo: ""
   },
   {
     title: "Loan Approval Prediction",
     image: loan,
     description:
       "Designed an end-to-end loan approval system that scores applications against historical data using scikit-learn, deployed as an interactive Streamlit app for real-time decisioning.",
-    technologies: ["Python", "scikit-learn", "Streamlit", "Pandas"],
-    githubLink: "https://github.com/Murugavl",
-    demoLink: "https://loan--approval--prediction.streamlit.app",
+    overview: "An interactive machine learning application that predicts whether a loan application will be approved based on applicant details like credit history, income, education, and assets.",
+    problemSolved: "Manual loan screening is slow, subjective, and prone to human error. This app provides instant, data-backed screening to assist credit officers.",
+    features: [
+      "Real-time application scoring",
+      "User-friendly form interface",
+      "Model explanation & feature importance visualization",
+      "Automatic data cleaning pipeline"
+    ],
+    challenges: "Ensuring the Streamlit app state remains responsive and doesn't reload the entire model on every user input change. Resolved by using Streamlit's caching mechanisms for model loading.",
+    techStack: ["Python", "scikit-learn", "Streamlit", "Pandas", "NumPy"],
+    deploymentPlatform: "Streamlit Community Cloud",
+    frontend: "Streamlit (Python-based UI)",
+    backend: "Streamlit Server (Python)",
+    // database: "None (Local pickle model)",
+    // cloudStorage: "None",
+    // authentication: "None",
+    // api: "None",
+    architecture: "Single-Tier Web App",
+    github: "https://github.com/Murugavl/Loan_Approval_Prediction",
+    liveDemo: "https://loan--approval--prediction.streamlit.app/"
   },
   {
     title: "Customer Churn Prediction",
     image: churn,
     description:
       "Built a churn-prediction pipeline that analyzes customer behavior patterns to flag at-risk customers early, deployed via Streamlit for interactive exploration.",
-    technologies: ["Python", "scikit-learn", "Streamlit", "Pandas"],
-    githubLink: "https://github.com/Murugavl",
-    demoLink: "https://customer-churnprediction.streamlit.app",
+    overview: "A customer churn prediction dashboard that analyzes behavior trends (e.g., tenure, usage, billing contract) to predict the likelihood of a customer leaving the service.",
+    problemSolved: "Acquiring new customers is 5x more expensive than retaining existing ones. This pipeline identifies high-risk customers, allowing marketing teams to target retention campaigns.",
+    features: [
+      "Predictive scoring threshold control",
+      "Customer profile visualization",
+      "Feature correlation heatmap",
+      "Batch prediction support via CSV upload"
+    ],
+    challenges: "Feature engineering from raw time-series interaction logs into stable tabular features. Solved by aggregating monthly usage trends and billing history.",
+    techStack: ["Python", "scikit-learn", "Streamlit", "Pandas", "NumPy"],
+    deploymentPlatform: "Streamlit Community Cloud",
+    frontend: "Streamlit UI",
+    backend: "Python (Streamlit)",
+    // database: "None (Pickle serialization)",
+    // cloudStorage: "None",
+    // authentication: "None",
+    // api: "None",
+    architecture: "Single-Tier Web App",
+    github: "https://github.com/Murugavl/Customer_churn_Prediction",
+    liveDemo: "https://customer-churn-prediction-o4y9.onrender.com/"
   },
   {
     title: "Crop Prediction",
     image: crop_prediction,
     description:
       "Built a Flask-based recommendation system that suggests optimal crops from soil and climate data, helping farmers make data-driven planting decisions.",
-    technologies: ["Python", "Flask", "scikit-learn", "NumPy", "Pandas"],
-    githubLink: "https://github.com/Murugavl",
+    overview: "A web-based crop advisor that recommends the best crop to cultivate based on soil parameters (Nitrogen, Phosphorous, Potassium, pH) and climatic factors (Temperature, Humidity, Rainfall).",
+    problemSolved: "Improper crop selection leads to soil depletion and low agricultural yield. This model recommends optimal crops, optimizing farm productivity and sustainability.",
+    features: [
+      "Multi-input parameter form",
+      "Interactive prediction output",
+      "Soil quality insights",
+      "Model accuracy report dashboard"
+    ],
+    challenges: "Translating complex soil science indicators into accessible form inputs for everyday users. Solved by designing a simplified UI with explanatory tooltips.",
+    techStack: ["Python", "Flask", "scikit-learn", "NumPy", "Pandas"],
+    deploymentPlatform: "Render / Localhost",
+    frontend: "HTML5 / CSS3 / JavaScript",
+    backend: "Flask (Python)",
+    // database: "None (Static ML Model)",
+    // cloudStorage: "None",
+    // authentication: "None",
+    api: "REST API (Flask endpoint)",
+    architecture: "Client-Server (MVC)",
+    github: "https://github.com/Murugavl/Crop-Prediction",
+    liveDemo: "https://crop-prediction-61kd.onrender.com/"
   },
   {
     title: "Flower Prediction",
     image: flower_prediction,
     description:
       "Trained and compared classification models on the Iris dataset, then deployed the best-performing model as a Flask web app for real-time species prediction.",
-    technologies: ["Python", "Flask", "scikit-learn", "NumPy", "Pandas"],
-    githubLink: "https://github.com/Murugavl",
+    overview: "A simple, educational web application that classifies Iris flower species (Setosa, Versicolor, Virginica) based on sepal and petal measurements.",
+    problemSolved: "Introduced standard machine learning workflows and deployment pipelines for beginners by demonstrating classification on a benchmark dataset.",
+    features: [
+      "Instant classification",
+      "Visual representations of species",
+      "Responsive interface",
+      "Detailed probability breakdown"
+    ],
+    challenges: "Creating a lightweight app that can be instantly booted with minimal cold-start delay. Solved using a simple linear classifier.",
+    techStack: ["Python", "Flask", "scikit-learn", "NumPy", "Pandas"],
+    deploymentPlatform: "Render",
+    frontend: "HTML / Tailwind CSS",
+    backend: "Flask (Python)",
+    // database: "None",
+    // cloudStorage: "None",
+    // authentication: "None",
+    api: "REST API",
+    architecture: "Client-Server",
+    github: "https://github.com/Murugavl/Flower-Prediction",
+    // liveDemo: ""
   },
   {
     title: "SmartKart",
     image: smartkart,
     description:
       "Developed a full-stack e-commerce platform in Django, with product browsing, cart management, and a secure checkout flow.",
-    technologies: ["Python", "Django", "HTML/CSS"],
-    githubLink: "https://github.com/Murugavl",
+    overview: "A complete e-commerce solution featuring dynamic catalog management, shopper profiles, cart operations, order placement, and an administrative dashboard.",
+    problemSolved: "Retail businesses require a robust online storefront with consistent inventory tracking, shopping logic, and secure checkout.",
+    features: [
+      "Product categorization & search",
+      "Shopping cart state retention",
+      "User authentication & dashboard",
+      "Admin panel for inventory and order management"
+    ],
+    challenges: "Maintaining cart sessions for guest users and converting them seamlessly upon signup/login. Solved using Django's session database framework.",
+    techStack: ["Python", "Django", "HTML/CSS"],
+    deploymentPlatform: "PythonAnywhere",
+    frontend: "HTML5 / CSS3 / JavaScript",
+    backend: "Django (Python)",
+    database: "SQLite (Development)",
+    cloudStorage: "Local static storage",
+    authentication: "Django Auth System",
+    api: "Django Templates (Server-rendered)",
+    architecture: "Model-View-Template (MVT)",
+    github: "https://github.com/Murugavl/SmartKart",
+    liveDemo: ""
   },
   {
     title: "Code Converter",
     image: code_converter,
     description:
       "Built an in-browser code and Markdown editor in React, with live HTML/CSS/JS previews, GitHub-flavored Markdown rendering, and autosave to local storage.",
-    technologies: ["React", "JavaScript", "HTML/CSS"],
-    githubLink: "https://github.com/Murugavl",
-    demoLink: "https://code-converter.streamlit.app/",
+    overview: "An in-browser code compiler and converter that lets developers write code and see instant HTML/CSS/JS visual previews, alongside a Markdown previewer.",
+    problemSolved: "Eliminates the need for opening complex local IDEs just to convert snippets, test minor web mockups, or write markdown notes.",
+    features: [
+      "Real-time code compilation",
+      "Dual-pane editor and previewer",
+      "Autosave via localStorage",
+      "One-click copy and reset"
+    ],
+    challenges: "Preventing infinite loops in user-submitted JavaScript from crashing the main browser thread. Solved by executing script previews inside a sandboxed iframe with restricted permissions.",
+    techStack: ["React", "JavaScript", "HTML/CSS", "Tailwind CSS"],
+    deploymentPlatform: "Vercel",
+    frontend: "React",
+    backend: "None (Static Single-Page Application)",
+    database: "Local Storage",
+    // cloudStorage: "None",
+    // authentication: "None",
+    // api: "None",
+    architecture: "Single-Page App (SPA)",
+    github: "https://github.com/Murugavl/Code-Converter",
+    liveDemo: "https://code-converter.streamlit.app/"
   },
   {
     title: "Hospital Management System",
     image: hospital_management_system,
     description:
       "Built a desktop Hospital Management System with Tkinter and MongoDB to help administrative staff manage patient records and operations.",
-    technologies: ["Python", "Tkinter", "MongoDB"],
-    githubLink: "https://github.com/Murugavl",
+    overview: "A desktop database application designed for hospital staff to manage patient entries, doctors, appointments, billing records, and medical logs.",
+    problemSolved: "Local clinics often lack expensive web infrastructure, needing a lightweight, offline desktop database to secure patient charts.",
+    features: [
+      "Patient database CRUD operations",
+      "Doctor schedule planner",
+      "Billing invoice generator",
+      "MongoDB remote synchronization"
+    ],
+    challenges: "Connecting a native Python desktop app (Tkinter) to a remote MongoDB Atlas database securely and handling network dropouts gracefully. Solved using python's PyMongo thread-safe client with custom retry logic.",
+    techStack: ["Python", "Tkinter", "MongoDB"],
+    deploymentPlatform: "Desktop Application",
+    frontend: "Tkinter GUI",
+    backend: "Python (PyMongo)",
+    database: "MongoDB Atlas",
+    // cloudStorage: "None",
+    authentication: "Custom Local Login",
+    // api: "None",
+    architecture: "Desktop client connecting to Cloud Database",
+    github: "https://github.com/Murugavl/Tkinter-Hospital_Management_System",
+    // liveDemo: ""
   },
   {
     title: "Scientific Calculator",
     image: calculator,
     description:
       "Developed a native Android scientific calculator in Java, supporting arithmetic, trigonometric, and logarithmic functions through an intuitive interface.",
-    technologies: ["Java", "Android Studio"],
-    githubLink: "https://github.com/Murugavl",
-  },
+    overview: "A native Android calculator designed to evaluate mathematical expressions, handling standard and advanced scientific operations.",
+    problemSolved: "Many default mobile calculators lack advanced formula parsing or clear histories for multi-step engineering calculations.",
+    features: [
+      "Trigonometric, logarithmic, and exponential operations",
+      "Interactive calculation history",
+      "Theme customizer",
+      "Error checking for invalid expressions"
+    ],
+    challenges: "Implementing a mathematically correct parser for order of operations (PEMDAS). Resolved by building a Shunting-yard algorithm parser in Java.",
+    techStack: ["Java", "Android Studio"],
+    deploymentPlatform: "Google Play Store / APK",
+    frontend: "Android Native XML",
+    backend: "Java",
+    database: "Room DB (History cache)",
+    // cloudStorage: "None",
+    // authentication: "None",
+    // api: "None",
+    architecture: "Mobile App (MVP Architecture)",
+    github: "https://github.com/Murugavl/ScientificCalculator",
+    // liveDemo: ""
+  }
 ];
 
 // ─── Contact ───────────────────────────────────────────────────────
