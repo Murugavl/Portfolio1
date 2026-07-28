@@ -276,31 +276,41 @@ export const PROJECTS = [
     liveDemo: "https://crop-prediction-61kd.onrender.com/"
   },
   {
-    title: "Liver Cancer Detection",
+    title: "HepatoScan AI - Liver Cancer & Disease Diagnostic Platform",
     image: liver_image,
-    description:
-      "Built and evaluated multiple machine learning classifiers to detect liver cancer from patient health records, comparing model performance to identify the most reliable predictors for early diagnosis support.",
-    overview: "This project aims to support early diagnosis of liver cancer by analyzing patient health records. By comparing different machine learning classifiers, we identify the most accurate model for predicting liver cancer risk, potentially saving lives through early intervention.",
-    problemSolved: "Liver cancer is often detected at late stages when treatment options are limited. This ML system helps clinicians identify high-risk patients earlier based on routine clinical metrics.",
+    description: "Developed a full-stack clinical diagnostic platform using FastAPI, React 18, Vite, and Scikit-Learn/XGBoost for automated liver disease risk assessment and LFT biomarker evaluation.",
+    overview: "A high-performance machine learning healthcare platform trained on 30,691 clinical patient records. Features an interactive diagnostic risk calculator, non-overlapping SVG risk probability gauge, rule-based LFT biomarker health evaluations, model performance analytics dashboard (99.71% accuracy, 0.9999 ROC-AUC), and complete Dark/Light theme customization.",
+    problemSolved: "Liver diseases often progress silently until advanced stages, requiring early screening. This platform automates the diagnostic evaluation of standard Liver Function Test (LFT) parameters to provide instant, high-precision risk stratification and clinical recommendations.",
     features: [
-      "Data preprocessing & normalization",
-      "Exploratory Data Analysis (EDA)",
-      "Evaluation of multiple ML classifiers (Logistic Regression, Random Forest, SVM)",
-      "Performance metrics comparison (Accuracy, Precision, Recall, F1-Score)"
+      "Automated 10-parameter LFT risk evaluation using Random Forest & XGBoost Ensemble",
+      "Interactive SVG semi-circle risk probability gauge with risk severity level classification",
+      "Rule-based clinical biomarker evaluation (Bilirubin, ALT, AST, Alkphos, Albumin, A/G Ratio)",
+      "Model performance analytics dashboard featuring ROC-AUC curve & feature importance rankings",
+      "1-click clinical sample presets for rapid normal vs high-risk patient testing",
+      "Full Dark and Light mode theme support with responsive medical UI design"
     ],
-    challenges: "Handling class imbalance in medical records where negative cases outnumber positive cancer diagnoses. Solved using SMOTE (Synthetic Minority Over-sampling Technique) to balance the training dataset.",
-    techStack: ["Python", "scikit-learn", "Pandas", "NumPy", "Jupyter Notebook"],
-    deploymentPlatform: "Jupyter Notebook (Offline Analysis)",
-    // frontend: "None (Jupyter Notebook / CLI)",
-    backend: "Python",
-    // database: "None (CSV data source)",
-    cloudStorage: "None",
-    authentication: "None",
-    api: "None",
-    architecture: "Monolithic Notebook",
+    challenges: "Handling class imbalance in medical dataset records and non-linear biomarker correlations across diverse patient demographics. Solved by implementing a class-balanced Random Forest ensemble pipeline with feature scaling, cross-validation, and rule-based clinical boundary flags.",
+    techStack: [
+      "Python",
+      "FastAPI",
+      "Scikit-Learn",
+      "XGBoost",
+      "React",
+      "Vite",
+      "CSS3"
+    ],
+    deploymentPlatform: "Render / Vercel",
+    frontend: "React 18 / Vite / Lucide Icons",
+    backend: "FastAPI (Python) / Scikit-Learn (Joblib)",
+    database: "Pre-trained ML Model Artifacts (Joblib / JSON)",
+    cloudStorage: "Local Model Storage / Render Storage",
+    authentication: "REST API Access / Public Diagnostic Portal",
+    api: "FastAPI REST API",
+    architecture: "Modular Decoupled Client-Server REST Architecture",
     github: "https://github.com/Murugavl/liver_cancer_detection",
-    // liveDemo: ""
+    liveDemo: "liver-cancer-detection.vercel.app"
   },
+
   {
     title: "Flower Prediction",
     image: flower_prediction,
