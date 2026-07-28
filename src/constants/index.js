@@ -9,6 +9,8 @@ import loan from "../assets/projects/Loan_Approval_Prediction.png";
 import crop_prediction from "../assets/projects/crop-prediction.png";
 import flower_prediction from "../assets/projects/flower-prediction.png";
 import smartkart from "../assets/projects/smartkart.png";
+import insightai from "../assets/projects/company-insight-ai.png";
+import financeai from "../assets/projects/finance-ai.png";
 
 // ─── Certification Images ──────────────────────────────────────────
 import uipath_cert from "../assets/certs/UI-Path.png";
@@ -126,30 +128,74 @@ export const EXPERIENCES = [
 // ─── Projects ──────────────────────────────────────────────────────
 export const PROJECTS = [
   {
-    title: "Liver Cancer Detection",
-    image: liver_image,
-    description:
-      "Built and evaluated multiple machine learning classifiers to detect liver cancer from patient health records, comparing model performance to identify the most reliable predictors for early diagnosis support.",
-    overview: "This project aims to support early diagnosis of liver cancer by analyzing patient health records. By comparing different machine learning classifiers, we identify the most accurate model for predicting liver cancer risk, potentially saving lives through early intervention.",
-    problemSolved: "Liver cancer is often detected at late stages when treatment options are limited. This ML system helps clinicians identify high-risk patients earlier based on routine clinical metrics.",
-    features: [
-      "Data preprocessing & normalization",
-      "Exploratory Data Analysis (EDA)",
-      "Evaluation of multiple ML classifiers (Logistic Regression, Random Forest, SVM)",
-      "Performance metrics comparison (Accuracy, Precision, Recall, F1-Score)"
+    "title": "Company Research Agent",
+    "image": insightai,
+    "description": "Developed an autonomous AI research platform using LangGraph and FastAPI for real-time company intelligence, competitor analysis, and automated strategic reporting.",
+    "overview": "An enterprise-grade research solution leveraging multi-step agent orchestration to perform live web searches, extract structured business metrics, perform delta analysis across sessions, and generate comprehensive strategic reports.",
+    "problemSolved": "Manual market and competitor research is tedious and time-consuming. This agent automates multi-source web intelligence gathering and synthesizes raw data into structured 9-section strategic insights.",
+    "features": [
+      "LangGraph StateGraph for deterministic AI agent orchestration",
+      "Real-time Tavily Web Search integration for up-to-date data",
+      "Automated structured report generation across 9 strategic domains",
+      "Session delta analysis to track changes between research updates",
+      "Modern React dashboard with live research status and interactive chat",
+      "Redis caching for search optimization & SQLite for research persistence"
     ],
-    challenges: "Handling class imbalance in medical records where negative cases outnumber positive cancer diagnoses. Solved using SMOTE (Synthetic Minority Over-sampling Technique) to balance the training dataset.",
-    techStack: ["Python", "scikit-learn", "Pandas", "NumPy", "Jupyter Notebook"],
-    deploymentPlatform: "Jupyter Notebook (Offline Analysis)",
-    // frontend: "None (Jupyter Notebook / CLI)",
-    backend: "Python",
-    // database: "None (CSV data source)",
-    cloudStorage: "None",
-    authentication: "None",
-    api: "None",
-    architecture: "Monolithic Notebook",
-    github: "https://github.com/Murugavl/liver_cancer_detection",
-    // liveDemo: ""
+    "challenges": "Ensuring deterministic state transitions and fault tolerance across multi-step asynchronous search pipelines. Solved using LangGraph's state graph architecture and Redis result caching.",
+    "techStack": [
+      "Python",
+      "FastAPI",
+      "LangGraph",
+      "Groq",
+      "React",
+      "Tailwind CSS",
+      "Redis"
+    ],
+    "deploymentPlatform": "Docker / Render",
+    "frontend": "React 18 / Vite / Tailwind CSS",
+    "backend": "FastAPI / LangGraph / Groq (Llama 3)",
+    "database": "SQLite (Persistence) / Redis (Cache)",
+    "cloudStorage": "Local File / SQLite Storage",
+    "authentication": "API Key / Custom Auth",
+    "api": "FastAPI REST API",
+    "architecture": "Agentic State Graph Architecture (LangGraph + REST API)",
+    "github": "https://github.com/Murugavl/Company_Research_Agent",
+    "liveDemo": "https://company-research-agent-s3ib.onrender.com"
+  },
+  {
+    title: "AI-Powered Personal Finance Assistant",
+    image: financeai, // Ensure you import `financeai` image at the top of your file
+    description: "Developed a full-stack personal finance management platform using FastAPI, React, MongoDB, and GROQ AI for automated receipt extraction and intelligent spending analysis.",
+    overview: "A comprehensive personal finance platform featuring automated receipt scanning via multi-pass OCR & GROQ Vision AI, an embedded GROQ LLaMA 3 financial chatbot, interactive category analytics, budget tracking, and exportable financial reports.",
+    problemSolved: "Manual expense entry is time-consuming and prone to human error. This platform automates receipt data extraction and provides an intelligent financial assistant for real-time budget insights.",
+    features: [
+      "Automated bill & receipt extraction using OpenCV, Tesseract OCR & GROQ Vision AI",
+      "Embedded GROQ AI financial assistant (LLaMA 3) with live user context",
+      "Interactive expense analytics with categorical spending breakdowns",
+      "Real-time budget monitoring and multi-account balance aggregation",
+      "Automated statement export in PDF and CSV formats",
+      "Secure JWT authentication and password hashing"
+    ],
+    challenges: "Ensuring accurate receipt data extraction across diverse image qualities without requiring heavy system binaries on cloud servers. Solved by engineering a multi-pass image preprocessing pipeline with an automated GROQ Vision AI fallback.",
+    techStack: [
+      "Python",
+      "FastAPI",
+      "React",
+      "Tailwind CSS",
+      "MongoDB",
+      "GROQ AI",
+      "OpenCV"
+    ],
+    deploymentPlatform: "Render / Vercel",
+    frontend: "React 18 / Vite / Tailwind CSS",
+    backend: "FastAPI (Python) / GROQ AI (LLaMA 3 & Vision)",
+    database: "MongoDB Atlas (Motor Async)",
+    cloudStorage: "Local Static Storage / Cloud Storage",
+    authentication: "JWT Authentication (Bcrypt)",
+    api: "FastAPI REST API",
+    architecture: "Asynchronous Modular REST Architecture",
+    github: "https://github.com/Murugavl/AI-powered-personal-finance",
+    liveDemo: "https://ai-powered-personal-finance-lyart.vercel.app/"
   },
   {
     title: "Loan Approval Prediction",
@@ -175,7 +221,7 @@ export const PROJECTS = [
     // api: "None",
     architecture: "Single-Tier Web App",
     github: "https://github.com/Murugavl/Loan_Approval_Prediction",
-    liveDemo: "https://loan--approval--prediction.streamlit.app/"
+    liveDemo: "https://loan-approval-prediction-t3vd.onrender.com"
   },
   {
     title: "Customer Churn Prediction",
@@ -228,6 +274,32 @@ export const PROJECTS = [
     architecture: "Client-Server (MVC)",
     github: "https://github.com/Murugavl/Crop-Prediction",
     liveDemo: "https://crop-prediction-61kd.onrender.com/"
+  },
+  {
+    title: "Liver Cancer Detection",
+    image: liver_image,
+    description:
+      "Built and evaluated multiple machine learning classifiers to detect liver cancer from patient health records, comparing model performance to identify the most reliable predictors for early diagnosis support.",
+    overview: "This project aims to support early diagnosis of liver cancer by analyzing patient health records. By comparing different machine learning classifiers, we identify the most accurate model for predicting liver cancer risk, potentially saving lives through early intervention.",
+    problemSolved: "Liver cancer is often detected at late stages when treatment options are limited. This ML system helps clinicians identify high-risk patients earlier based on routine clinical metrics.",
+    features: [
+      "Data preprocessing & normalization",
+      "Exploratory Data Analysis (EDA)",
+      "Evaluation of multiple ML classifiers (Logistic Regression, Random Forest, SVM)",
+      "Performance metrics comparison (Accuracy, Precision, Recall, F1-Score)"
+    ],
+    challenges: "Handling class imbalance in medical records where negative cases outnumber positive cancer diagnoses. Solved using SMOTE (Synthetic Minority Over-sampling Technique) to balance the training dataset.",
+    techStack: ["Python", "scikit-learn", "Pandas", "NumPy", "Jupyter Notebook"],
+    deploymentPlatform: "Jupyter Notebook (Offline Analysis)",
+    // frontend: "None (Jupyter Notebook / CLI)",
+    backend: "Python",
+    // database: "None (CSV data source)",
+    cloudStorage: "None",
+    authentication: "None",
+    api: "None",
+    architecture: "Monolithic Notebook",
+    github: "https://github.com/Murugavl/liver_cancer_detection",
+    // liveDemo: ""
   },
   {
     title: "Flower Prediction",
