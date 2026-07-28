@@ -308,7 +308,7 @@ export const PROJECTS = [
     api: "FastAPI REST API",
     architecture: "Modular Decoupled Client-Server REST Architecture",
     github: "https://github.com/Murugavl/liver_cancer_detection",
-    liveDemo: "liver-cancer-detection.vercel.app"
+    liveDemo: "https://liver-cancer-detection.vercel.app"
   },
 
   {
